@@ -1,0 +1,104 @@
+:root {
+	--primary-color: #FF94AC;
+	--background-color: #f9f5f0;
+	--dark-color: #151515;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background-color: white;
+  width: 360px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(150, 120, 250, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6e40f3;
+  box-shadow: 0 0 6px rgba(110, 64, 243, 0.5);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+
+  display: block;     /* Hace que el botón se comporte como bloque */
+  width: 100%;        /* Ocupa todo el ancho del formulario */
+  max-width: 200px;   /* Máximo ancho */
+  margin-left: auto;  /* Centra horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
+}
+
+
+.btn:hover {
+  background-color: #532dcf;
+}
+
+.link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
