@@ -198,18 +198,130 @@ body {
 	color: #fff;
 }
 
-/* Body */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-}
-
 /*--------BLOG--------*/
 
+/* ESTILOS GENERALES DE LA PÁGINA DE BLOG     */
+/* Contenedor principal que envuelve todo el contenido del blog */
+.blog-main {
+    max-width: 90rem; /* Ancho máximo para el contenido */
+    margin: 4rem auto; /* Centra el contenido y le da espacio arriba y abajo */
+    padding: 0 2rem;   /* Evita que el contenido toque los bordes en pantallas pequeñas */
+}
 
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 4rem; /* Espacio entre el título y los artículos */
+}
 
+.titulo-pagina h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-color); /* Usando la variable de color oscuro que definiste */
+}
 
+/* ============================================== */
+/* CONTENEDOR DE LOS ARTÍCULOS                */
+/* ============================================== */
+.blog-contenedor {
+    display: grid; /* Usamos Grid para organizar los artículos */
+    gap: 3rem;     /* Espacio vertical entre cada artículo */
+}
+
+/* ESTILO DE CADA TARJETA DE ARTÍCULO*/
+/* --- Estilo Base (Móvil) --- */
+.articulo {
+    display: flex;
+    flex-direction: column; /* En móviles, la imagen está arriba y el texto abajo */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Mantiene la imagen dentro de los bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articulo:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Imagen del Artículo --- */
+.articulo figure {
+    margin: 0;
+}
+
+.articulo figure img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina un espacio fantasma debajo de la imagen */
+}
+
+/*artículo*/
+.articulo div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.articulo h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.articulo h3 a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.articulo h3 a:hover {
+    color: var(--primary-color);
+}
+
+.articulo p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #222222;
+}
+
+.articulo footer {
+    margin-top: auto; /* Empuja el footer al final del div */
+}
+
+/* ============================================== */
+/* METADATOS DEL ARTÍCULO (Fecha y Autor)     */
+/* ============================================== */
+
+.articulo footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+    margin-top: auto;
+    font-size: 1.3rem;
+    color: #92979e;
+}
+
+/* el responsive */
+@media (min-width: 768px) {
+    .articulo {
+        flex-direction: row; /* La imagen se pone a la izquierda y el texto a la derecha */
+    }
+
+    .articulo figure {
+        flex-basis: 40%; /* La imagen ocupa el 40% del ancho de la tarjeta */
+        flex-shrink: 0;
+    }
+
+    .articulo figure img {
+        height: 100%; /* La imagen ocupa toda la altura de la tarjeta */
+        object-fit: cover; /* Evita que la imagen se estire o se aplaste */
+    }
+
+    .articulo div {
+        flex-basis: 60%; /* El texto ocupa el 60% restante */
+        padding: 2.5rem; /* Un poco más de espacio en pantallas grandes */
+    }
+}
 
 /*---------------------------*/
 /*|         Footer          |*/
