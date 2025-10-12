@@ -6,14 +6,18 @@
 }
 /*LETRA*/
 html {
-	font-size: 62.5%;
-	font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color); /* Usa tu variable en lugar de #f5f5f5 */
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Cabecera */
@@ -283,13 +287,6 @@ html {
 	font-weight: 500;
 }
 
-/* Body */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-}
-
 /* Productos */
 main {
   padding: 30px;
@@ -343,7 +340,7 @@ main {
 .container-footer {
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 3rem;
 	padding: 3rem;
 }
 
