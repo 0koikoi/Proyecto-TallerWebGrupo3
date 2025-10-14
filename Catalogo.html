@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/08e9618c09.js"
       crossorigin="anonymous"
     ></script>
-    <title>TIENDA</title>
-    <link rel="stylesheet" href="CSS/catalogo.css" />
-  </head>
-  <body>
+    <title>Catálogo - TIENDA</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+</head>
+<body>
     <header>
       <div class="container-hero">
         <div class="container hero">
@@ -24,7 +24,7 @@
 
           <div class="container-logo">
             <i class="fa-solid fa-store"></i>
-            <h1 class="logo"><a href="/">TIENDA</a></h1>
+            <h1 class="logo"><a href="index.html">TIENDA</a></h1>
           </div>
 
           <div class="container-user">
@@ -42,13 +42,35 @@
         <nav class="navbar container">
           <i class="fa-solid fa-bars"></i>
           <ul class="menu">
-            <li><a href="index.html">Inicio</a></li> <!--Piero-->
-            <li><a href="Catalogo.html">Catálogo</a></li> <!--Melissa-->
-            <li><a href="Colecciones.html">Colecciones</a></li> <!--Zully, falta reeditar-->
-            <li><a href="nosotros.html">Nosotros</a></li> <!--Keyla-->
+            <li><a href="index.html">Inicio</a></li>
+
+                <li class="menu-item-has-dropdown">
+                    <a href="Catalogo.html">Catálogo <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="mega-menu-container">
+                        <div class="mega-menu">
+                            <div class="mega-menu-column">
+                                <h4>Peluches y Figuras</h4>
+                                <ul>
+                                    <li><a href="peluches.html">Peluches</a></li>
+                                    <li><a href="figuras.html">Figuras</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>Articulos para el Hogar</h4>
+                                <ul>
+                                    <li><a href="Papelería.html">Papelería</a></li>
+                                    <li><a href="utensilios.html">Utensilios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            <li><a href="Colecciones.html">Colecciones</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="login.html">Registro</a></li>
-            <li><a href="eventos.html">Eventos</a></li> <!--Yessica, cambiado de "más" a "eventos"-->
-            <li><a href="Blog.html">Blog</a></li> <!--Zully-->
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="Blog.html">Blog</a></li>
           </ul>
 
           <form class="search-form">
@@ -61,9 +83,253 @@
       </div>
     </header>
 
-    <!--contenido-->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="heading-1">Catalogo</h1>
 
-    <!--footer-->
+            <div class="productos-grid">
+
+                <div class="producto-card">
+                    <img src="img/nendroids Suguru geto.jpg" alt="geto">
+                    <div class="card-content">
+                        <h3>nedroids Suguru Geto</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/cartuchera pompompurin.jpg" alt="Cartuchera">
+                    <div class="card-content">
+                        <h3>Cartuchera Pompompurin</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 15.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>   
+                
+            
+                <div class="producto-card">
+                    <img src="img/Luffy.jpg" alt="Peluche Luffy">
+                    <div class="card-content">
+                        <h3>Luffy</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 50.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Pompompurin pencil.jpg" alt="Lapiceros">
+                    <div class="card-content">
+                        <h3>Lapiceros Sanrio (Pack x6)</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 5.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Tenna figura.png" alt="Tenna">
+                    <div class="card-content">
+                        <h3>Tenna Figura</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 50.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>               
+                
+                <div class="producto-card">
+                    <img src="img/sanji.jpg" alt="Peluche sanji">
+                    <div class="card-content">
+                        <h3>Sanji</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="producto-card">
+                    <img src="img/Ralsei_sin_sombrero.jpg" alt="Ralsei sin sombrero">
+                    <div class="card-content">
+                        <h3>Ralsei sin sombrero</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>     
+
+                <div class="producto-card">
+                    <img src="img/Blind box alien stage.jpg" alt="Alien stage">
+                    <div class="card-content">
+                        <h3>Blind box Alien stage</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 10.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>             
+
+                <div class="producto-card">
+                    <img src="img/Jack Skellington.jpg" alt="Figura Jack Skellington">
+                    <div class="card-content">
+                        <h3>Figura Jack Skellington</h3>
+                        <div class="price-box">
+                            <span class="old-price">Antes: S/ 35.00</span>
+                            <span class="new-price">Ahora: S/ 25.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <img src="img/Ralsei_con_sombrero.png" alt="Ralsei con sombrero">
+                    <div class="card-content">
+                        <h3>Ralsei con sombrero</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/cinamoroll.jpg" alt="Cuaderno Sanrio">
+                    <div class="card-content">
+                        <h3>Cuaderno cinamoroll</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 7.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>                
+                
+
+                <div class="producto-card">
+                    <img src="img/Taza gorro de Lufy.jpg" alt="Taza one piece">
+                    <div class="card-content">
+                        <h3>Tazas One piece</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 8.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+               <div class="producto-card">
+                    <img src="img/la bubu Ha.webp" alt="Labubu">
+                    <div class="card-content">
+                        <h3>Peluche Bubu Ha!</h3>
+                        <div class="price-box">
+                          <span class="old-price">Antes: S/ 28.00</span>
+                            <span class="new-price">S/ 20.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>               
+
+                <div class="producto-card">
+                    <img src="img/Lampara Minecraft.jpg" alt="Lampara">
+                    <div class="card-content">
+                        <h3>antorcha  Minecraft </h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 10.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>    
+
+               <div class="producto-card">
+                    <img src="img/Mask Orange Mummy.webp" alt="Momia">
+                    <div class="card-content">
+                        <h3>Mascara Momia Naranaja</h3>
+                        <div class="price-box">
+                          <span class="old-price">Antes: S/ 15.00</span>
+                          <span class="new-price">S/ 9.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <img src="img/nami.jpg" alt="Nami">
+                    <div class="card-content">
+                        <h3>Nami</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 40.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Zoro.jpg" alt="Peluche Zoro">
+                    <div class="card-content">
+                        <h3>Zoro</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Sans y Papyrus saleros.jpg" alt="Saleros">
+                    <div class="card-content">
+                        <h3>Salero Sans y Papyrus</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 5.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>                
+                    </div>
+                
+                <div class="producto-card">
+                    <img src="img/Anya Forger.jpg" alt="Figura Anya Forger">
+                    <div class="card-content">
+                        <h3>Peluche Anya Forger</h3>
+                        <div class="price-box">
+                            <span class="old-price">Antes: S/ 25.00</span>
+                            <span class="new-price">Ahora: S/ 18.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/chopper.jpg" alt="Peluche Chopper">
+                    <div class="card-content">
+                        <h3>Chopper</h3>
+                        <div class="price-box">
+                            <span class="new-price">S/ 45.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/kuromi flower.jpg" alt="Peluche Kuromi Halloween">
+                    <div class="card-content">
+                        <h3>Kuromi Halloween</h3>
+                        <div class="price-box">
+                            <span class="old-price">Antes: S/ 45.00</span>
+                            <span class="new-price">Ahora: S/ 30.00</span>
+                        </div>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
       <div class="container container-footer">
         <div class="menu-footer">
@@ -106,7 +372,6 @@
 
           <div class="my-account">
             <p class="title-footer">Mi cuenta</p>
-
             <ul>
               <li><a href="#">Mi cuenta</a></li>
               <li><a href="#">Historial de ordenes</a></li>
@@ -118,11 +383,9 @@
 
           <div class="newsletter">
             <p class="title-footer">Boletín informativo</p>
-
             <div class="content">
               <p>
-                Suscríbete a nuestros boletines ahora y mantente al día con
-                nuevas colecciones y ofertas exclusivas.
+                Suscríbete a nuestros boletines ahora y mantente al día.
               </p>
               <input type="email" placeholder="Ingresa el correo aquí..." />
               <button>Suscríbete</button>
@@ -132,10 +395,9 @@
 
         <div class="copyright">
           <p>Realizado por el grupo 3 &copy; 2025</p>
-
           <img src="img/payment.png" alt="Pagos" />
         </div>
       </div>
     </footer>
-  </body>
+</body>
 </html>
