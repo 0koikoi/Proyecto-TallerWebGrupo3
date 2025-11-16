@@ -79,7 +79,6 @@ input:focus {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
-
   display: block;     /* Hace que el botón se comporte como bloque */
   width: 100%;        /* Ocupa todo el ancho del formulario */
   max-width: 200px;   /* Máximo ancho */
@@ -89,7 +88,7 @@ input:focus {
 
 
 .btn:hover {
-  background-color: #532dcf;
+  background-color: var(--secundario-color);
 }
 
 .link {

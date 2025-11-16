@@ -8,83 +8,18 @@
       crossorigin="anonymous"
     ></script>
     <title>TIENDA</title>
+    <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
   </head>
+
   <body>
-    <header>
-      <div class="container-hero">
-        <div class="container hero">
-          <div class="customer-support">
-            <i class="fa-solid fa-headphones"></i>
-            <div class="content-customer-support">
-              <span class="text">Soporte al cliente</span>
-              <span class="number">123-456-789</span>
-            </div>
-          </div>
-
-          <div class="container-logo">
-            <i class="fa-solid fa-store"></i>
-            <h1 class="logo"><a href="/">TIENDA</a></h1>
-          </div>
-
-          <div class="container-user">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-basket-shopping"></i>
-            <div class="content-shopping-cart">
-              <span class="text">Carrito</span>
-              <span class="number">(0)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-navbar">
-        <nav class="navbar container">
-          <i class="fa-solid fa-bars"></i>
-          <ul class="menu">
-            <li><a href="index.html">Inicio</a></li> <!--Piero-->
-  <!--Melissa-->
-    <li class="menu-item-has-dropdown">
-        <a href="catalogo.html">Catálogo <i class="fa-solid fa-angle-down"></i></a>
-        
-        <div class="mega-menu-container">
-            <div class="mega-menu">
-                
-                <div class="mega-menu-column">
-                    <h4>Peluches y Figuras</h4>
-                    <ul>
-                        <li><a href="peluches.html">Peluches</a></li>
-                        <li><a href="figuras.html">Figuras</a></li>
-                    </ul>
-                </div>
-
-                <div class="mega-menu-column">
-                    <h4>Articulos para el Hogar</h4>
-                    <ul>
-                        <li><a href="Papelería.html">Papelería</a></li>
-                        <li><a href="utensilios.html">Utensilios</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </li>  <!--Melissa-->
-            <li><a href="Colecciones.html">Colecciones</a></li> <!--Zully, falta reeditar-->
-            <li><a href="nosotros.html">Nosotros</a></li> <!--Keyla-->
-            <li><a href="login.html">Registro</a></li>
-            <li><a href="eventos.html">Eventos</a></li> <!--Yessica, cambiado de "más" a "eventos"-->
-            <li><a href="Blog.html">Blog</a></li> <!--Zully-->
-          </ul>
-
-          <form class="search-form">
-            <input type="search" placeholder="Buscar..." />
-            <button class="btn-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </nav>
-      </div>
-    </header>
+    <!--header-->
+    <div id="header"></div>
+    <script>
+      cargaComponentes("header", "componentes/header.html");
+    </script>
 
     <!--banner-->
     <section class="banner">
@@ -197,78 +132,14 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container container-footer">
-        <div class="menu-footer">
-          <div class="contact-info">
-            <p class="title-footer">Información de Contacto</p>
-            <ul>
-              <li>Dirección: Av. Nicolás Ayllón con, Ate 15487</li>
-              <li>Teléfono: +51 123 456 789</li>
-              <li>EmaiL: peluches@support.com</li>
-            </ul>
-            <div class="social-icons">
-              <span class="facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </span>
-              <span class="twitter">
-                <i class="fa-brands fa-twitter"></i>
-              </span>
-              <span class="youtube">
-                <i class="fa-brands fa-youtube"></i>
-              </span>
-              <span class="pinterest">
-                <i class="fa-brands fa-pinterest-p"></i>
-              </span>
-              <span class="instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </div>
-          </div>
+    <!--footer-->
+    <div id="footer"></div>
+    <script>
+      cargaComponentes("footer", "componentes/footer.html");
+    </script>
 
-          <div class="information">
-            <p class="title-footer">Información</p>
-            <ul>
-              <li><a href="#">Acerca de Nosotros</a></li>
-              <li><a href="#">Información Delivery</a></li>
-              <li><a href="#">Politicas de Privacidad</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-              <li><a href="#">Contactános</a></li>
-            </ul>
-          </div>
-
-          <div class="my-account">
-            <p class="title-footer">Mi cuenta</p>
-
-            <ul>
-              <li><a href="#">Mi cuenta</a></li>
-              <li><a href="#">Historial de ordenes</a></li>
-              <li><a href="#">Lista de deseos</a></li>
-              <li><a href="#">Boletín</a></li>
-              <li><a href="#">Reembolsos</a></li>
-            </ul>
-          </div>
-
-          <div class="newsletter">
-            <p class="title-footer">Boletín informativo</p>
-
-            <div class="content">
-              <p>
-                Suscríbete a nuestros boletines ahora y mantente al día con
-                nuevas colecciones y ofertas exclusivas.
-              </p>
-              <input type="email" placeholder="Ingresa el correo aquí..." />
-              <button>Suscríbete</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="copyright">
-          <p>Realizado por el grupo 3 &copy; 2025</p>
-
-          <img src="img/payment.png" alt="Pagos" />
-        </div>
-      </div>
-    </footer>
+    <!--scripts-->
+    <script src="js/cargaComponentes.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
