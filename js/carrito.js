@@ -4,7 +4,7 @@ function openProductModal({ img, nombre, precio, cantidad }) {
   document.getElementById("modal-product-name").textContent = nombre;
   document.getElementById("modal-product-price").textContent = "S/ " + precio;
   document.getElementById("modal-product-qty").textContent = "Cantidad: " + cantidad;
-
+s
   document.getElementById("modal-overlay").style.display = "block";
 
   const modal = document.getElementById("modal-cart");
