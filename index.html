@@ -17,9 +17,6 @@
   <body>
     <!--header-->
     <div id="header"></div>
-    <script>
-      cargaComponentes("header", "componentes/header.html");
-    </script>
 
     <!--banner-->
     <section class="banner">
@@ -134,12 +131,14 @@
 
     <!--footer-->
     <div id="footer"></div>
-    <script>
-      cargaComponentes("footer", "componentes/footer.html");
-    </script>
-
-    <!--scripts, falta modificar-->
+<!-- llamar cargaComponentes después de cargar los scripts que la definen -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
+
+    <script>
+      // ahora sí está definida cargaComponentes
+      cargaComponentes("header", "componentes/header.html");
+      cargaComponentes("footer", "componentes/footer.html");
+    </script>
   </body>
 </html>

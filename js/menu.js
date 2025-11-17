@@ -1,35 +1,32 @@
-// Menú hamburguesa
-const navToggle = document.getElementById("navToggle");
-const navMenu = document.getElementById("navMenu");
+function initMenu() {
+    console.log("Intentando iniciar menú...");
 
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-  navToggle.classList.toggle("active");
+    const hamburgerMenu = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navMenu');
+
+    if (hamburgerMenu && navLinks) {
+
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+
+            const isExpanded = navLinks.classList.contains('open');
+            hamburgerMenu.setAttribute('aria-expanded', isExpanded);
+        });
+    } else {
+        console.warn("Elementos del menú no encontrados todavía.");
+    }
+}
+
+// Llamar initMenu cuando el header se haya cargado
+document.addEventListener('componentLoaded', (e) => {
+    if (e.detail && e.detail.id === 'header') {
+        initMenu();
+    }
 });
 
-// Cerrar menú al hacer clic fuera en móvil
-document.addEventListener("click", (e) => {
-  const clickInside = navMenu.contains(e.target) || navToggle.contains(e.target);
-  if (!clickInside && navMenu.classList.contains("open")) {
-    navMenu.classList.remove("open");
-    navToggle.classList.remove("active");
-  }
-});
-
-// Dropdown mega menú
-const dropdownBtn = document.querySelector(".dropdown-btn");
-const megaMenu = document.querySelector(".mega-menu");
-
-dropdownBtn.addEventListener("click", () => {
-  megaMenu.classList.toggle("open");
-});
-
-// Cerrar dropdown al hacer clic fuera
-document.addEventListener("click", (e) => {
-  const inside =
-    megaMenu.contains(e.target) || dropdownBtn.contains(e.target);
-
-  if (!inside) {
-    megaMenu.classList.remove("open");
-  }
+// Fallback: si el header ya existe (páginas estáticas), inicializa al DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('navToggle')) {
+        initMenu();
+    }
 });
