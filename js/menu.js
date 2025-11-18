@@ -1,32 +1,23 @@
-function initMenu() {
-    console.log("Intentando iniciar menú...");
+// MENU – se activa SOLO cuando el header ya cargó
+document.addEventListener("componentLoaded", (e) => {
+    //si el componente cargado no es el header, salir
+    if (e.detail.id !== "header") return;
 
-    const hamburgerMenu = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navMenu');
+    //configuración del menú de navegación
+    const navToggle = document.getElementById("navToggle"); // Botón de menú
+    const navMenu   = document.getElementById("navMenu"); // Menú de navegación
 
-    if (hamburgerMenu && navLinks) {
-
-        hamburgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-
-            const isExpanded = navLinks.classList.contains('open');
-            hamburgerMenu.setAttribute('aria-expanded', isExpanded);
-        });
-    } else {
-        console.warn("Elementos del menú no encontrados todavía.");
+    //si por algún motivo no los encuentra, avisar y salir
+    if (!navToggle || !navMenu) {
+        console.warn("No existe el menú en el header cargado.");
+        return;
     }
-}
 
-// Llamar initMenu cuando el header se haya cargado
-document.addEventListener('componentLoaded', (e) => {
-    if (e.detail && e.detail.id === 'header') {
-        initMenu();
-    }
-});
+    //esto según yo, activa el menú al hacer click en el botón
+    navToggle.addEventListener("click", () => {
+        const opened = navMenu.classList.toggle("open");
+        navMenu.setAttribute("aria-hidden", !opened);
+        navToggle.setAttribute("aria-expanded", opened);//y esto lo expande
+    });
 
-// Fallback: si el header ya existe (páginas estáticas), inicializa al DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('navToggle')) {
-        initMenu();
-    }
 });
