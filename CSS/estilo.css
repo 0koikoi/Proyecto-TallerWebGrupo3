@@ -340,32 +340,4 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
-
-  
-}
-
-.toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #3cb371;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 99999;
-}
-
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* Esto obliga al encabezado a estar  encima de los productos */
-#header {
-    position: relative;
-    z-index: 9999;
 }
