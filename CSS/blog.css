@@ -68,7 +68,7 @@
 }
 
 .articulo h3 a:hover {
-    color: var(--primary-color);
+    color: var(--terciario-color);
 }
 
 .articulo p {

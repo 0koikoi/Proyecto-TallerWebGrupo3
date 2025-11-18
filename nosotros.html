@@ -17,9 +17,6 @@
   <body>
     <!--header-->
     <div id="header"></div>
-    <script>
-      cargaComponentes("header", "componentes/header.html");
-    </script>
 
     <!-- CONTENIDO DE LA PÁGINA -->
     <section class="section-nosotros">
@@ -76,11 +73,14 @@
 
     <!--footer-->
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/cargaComponentes.js"></script>
+    <script src="js/menu.js"></script>
+
     <script>
+      cargaComponentes("header", "componentes/header.html");
       cargaComponentes("footer", "componentes/footer.html");
     </script>
-
-    <!--scripts-->
-    <script src="js/cargaComponentes.js"></script>
   </body>
 </html>

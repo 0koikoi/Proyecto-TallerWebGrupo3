@@ -8,26 +8,29 @@
       crossorigin="anonymous"
     ></script>
     <title>TIENDA</title>
-    <link rel="stylesheet" href="CSS/global.css" />
+
     <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
   </head>
 
   <body>
-    <!--header-->
+    <!-- HEADER -->
     <div id="header"></div>
 
-    <!--banner-->
+    <!-- BANNER -->
     <section class="banner">
       <div class="content-banner">
         <p>LOS MEJORES PELUCHES</p>
-        <h2>100% Algodon <br />ONE PIECE</h2>
+        <h2>100% Algodón <br />ONE PIECE</h2>
         <a href="#">Comprar ahora</a>
       </div>
     </section>
 
     <main class="main-content">
+
+      <!-- FEATURES -->
       <section class="container container-features">
         <div class="card-feature">
           <i class="fa-solid fa-plane-up"></i>
@@ -36,6 +39,7 @@
             <p>En pedido superior a s/150</p>
           </div>
         </div>
+
         <div class="card-feature">
           <i class="fa-solid fa-wallet"></i>
           <div class="feature-content">
@@ -43,6 +47,7 @@
             <p>100% garantía de devolución de dinero</p>
           </div>
         </div>
+
         <div class="card-feature">
           <i class="fa-solid fa-gift"></i>
           <div class="feature-content">
@@ -50,6 +55,7 @@
             <p>Ofrece bonos especiales con regalo</p>
           </div>
         </div>
+
         <div class="card-feature">
           <i class="fa-solid fa-headset"></i>
           <div class="feature-content">
@@ -59,84 +65,125 @@
         </div>
       </section>
 
+      <!-- PRODUCTOS DESTACADOS -->
       <h2>PRODUCTOS DESTACADOS</h2>
-      <section class="productos">
-        <article class="producto">
-          <img
-            src="img/Luffy.jpg"
-            alt="Peluche del personaje Luffy de One Piece"
-            loading="lazy"
-          />
-          <h3>Luffy</h3>
-          <p>S/. 50.00</p>
-          <button>Añadir al carrito</button>
-        </article>
 
-        <article class="producto">
-          <img
-            src="img/Zoro.jpg"
-            alt="Peluche del personaje Roronoa Zoro de One Piece"
-            loading="lazy"
-          />
-          <h3>Zoro</h3>
-          <p>S/. 45.00</p>
-          <button>Añadir al carrito</button>
-        </article>
+      <div class="container-products">
 
-        <article class="producto">
-          <img
-            src="img/sanji.jpg"
-            alt="Peluche del personaje Vinsmoke Sanji de One Piece"
-            loading="lazy"
-          />
-          <h3>Sanji</h3>
-          <p>S/. 40.00</p>
-          <button>Añadir al carrito</button>
-        </article>
+        <!-- Producto Luffy -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/Luffy.jpg" alt="Luffy" />
+            <span class="discount">-10%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
 
-        <article class="producto">
-          <img
-            src="img/chopper.jpg"
-            alt="Peluche del personaje Tony Tony Chopper de One Piece"
-            loading="lazy"
-          />
-          <h3>Chopper</h3>
-          <p>S/. 45.00</p>
-          <button>Añadir al carrito</button>
-        </article>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Luffy</h3>
+            <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+            <p class="price">S/50.00 <span>S/60.00</span></p>
+          </div>
+        </div>
 
-        <article class="producto">
-          <img
-            src="img/nami.jpg"
-            alt="Peluche de la personaje Nami de One Piece"
-            loading="lazy"
-          />
-          <h3>Nami</h3>
-          <p>S/. 40.00</p>
-          <button>Añadir al carrito</button>
-        </article>
+        <!-- Producto Zoro -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/Zoro.jpg" alt="Zoro" />
+            <span class="discount">-12%</span>
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
 
-        <article class="producto">
-          <img
-            src="img/usopp.jpg"
-            alt="Peluche del personaje Usopp de One Piece"
-            loading="lazy"
-          />
-          <h3>Usopp</h3>
-          <p>S/. 40.00</p>
-          <button>Añadir al carrito</button>
-        </article>
-      </section>
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Zoro</h3>
+            <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+            <p class="price">S/45.00 <span>S/55.00</span></p>
+          </div>
+        </div>
+
+        <!-- Producto Sanji -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/sanji.jpg" alt="Sanji" />
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Sanji</h3>
+            <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+            <p class="price">S/40.00</p>
+          </div>
+        </div>
+
+        <!-- Producto Chopper -->
+        <div class="card-product">
+          <div class="container-img">
+            <img src="img/chopper.jpeg" alt="Chopper" />
+            <div class="button-group">
+              <span><i class="fa-regular fa-eye"></i></span>
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-solid fa-code-compare"></i></span>
+            </div>
+          </div>
+
+          <div class="content-card-product">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Chopper</h3>
+            <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+            <p class="price">S/45.00</p>
+          </div>
+        </div>
+
+      </div><!-- FIN container-products -->
+
     </main>
 
-    <!--footer-->
+    <!-- FOOTER -->
     <div id="footer"></div>
-<!-- llamar cargaComponentes después de cargar los scripts que la definen -->
+
+    <!-- SCRIPTS -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
 
     <script>
-      // ahora sí está definida cargaComponentes
       cargaComponentes("header", "componentes/header.html");
       cargaComponentes("footer", "componentes/footer.html");
     </script>

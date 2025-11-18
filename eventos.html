@@ -17,12 +17,9 @@
   <body>
     <!--header-->
     <div id="header"></div>
-    <script>
-      cargaComponentes("header", "componentes/header.html");
-    </script>
 
     <section class="ofertas-halloween">
-      <h1>🎃 EVENTO ESPECIAL HALLOWEEN 🎃</h1>
+      <h1>EVENTO ESPECIAL HALLOWEEN</h1>
       <p>¡Descubre nuestras ofertas más espeluznantes y adorables del mes!</p>
 
       <div class="ofertas-grid">
@@ -82,11 +79,14 @@
 
     <!--footer-->
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/cargaComponentes.js"></script>
+    <script src="js/menu.js"></script>
+
     <script>
+      cargaComponentes("header", "componentes/header.html");
       cargaComponentes("footer", "componentes/footer.html");
     </script>
-
-    <!--scripts-->
-    <script src="js/cargaComponentes.js"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Tazas - TIENDA</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
     <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
@@ -16,9 +17,6 @@
   <body>
     <!--header-->
     <div id="header"></div>
-    <script>
-      cargaComponentes("header", "componentes/header.html");
-    </script>
 
     <main class="main-content">
       <div class="container">
@@ -63,11 +61,14 @@
 
     <!--footer-->
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/cargaComponentes.js"></script>
+    <script src="js/menu.js"></script>
+
     <script>
+      cargaComponentes("header", "componentes/header.html");
       cargaComponentes("footer", "componentes/footer.html");
     </script>
-
-    <!--scripts-->
-    <script src="js/cargaComponentes.js"></script>
   </body>
 </html>
