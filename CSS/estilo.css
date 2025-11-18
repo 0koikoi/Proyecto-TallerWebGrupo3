@@ -340,8 +340,6 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
-<<<<<<< HEAD
-}/*fin temporal hamburguesa que ya funciona*/
 
 /*provisional*/
 /* NOTIFICACIÓN FLOTANTE DEL CARRITO */
@@ -349,7 +347,7 @@ main h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #4CAF50;
+    background-color: #67e06b;
     color: white;
     padding: 15px 25px;
     border-radius: 8px;
@@ -362,7 +360,7 @@ main h2 {
     align-items: center;
     gap: 12px;
     max-width: 320px;
-    border-left: 4px solid #2E7D32;
+    border-left: 4px solid #224924ff;
 }
 
 .cart-notification.show {
@@ -411,6 +409,4 @@ main h2 {
     .cart-notification.show {
         transform: translateY(0);
     }
-=======
->>>>>>> bcc48170ac06458ceaee2d7b596f40d51d5c1c0c
-}
+}}
