@@ -340,6 +340,7 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
+<<<<<<< HEAD
 }/*fin temporal hamburguesa que ya funciona*/
 
 /*provisional*/
@@ -410,4 +411,6 @@ main h2 {
     .cart-notification.show {
         transform: translateY(0);
     }
+=======
+>>>>>>> bcc48170ac06458ceaee2d7b596f40d51d5c1c0c
 }
