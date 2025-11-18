@@ -132,6 +132,10 @@ main h2 {
 /* "auto-fit" hace que si sobra espacio, las tarjetas se estiren.
        "minmax(20rem, 1fr)" dice: La tarjeta mide mínimo 20rem, 
        pero si hay espacio, ocupa 1 fracción (1fr) completa. */
+
+/* "auto-fit" hace que si sobra espacio, las tarjetas se estiren.
+       "minmax(20rem, 1fr)" dice: La tarjeta mide mínimo 20rem, 
+       pero si hay espacio, ocupa 1 fracción (1fr) completa. */
 .container-products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

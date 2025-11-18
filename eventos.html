@@ -19,54 +19,51 @@
     <div id="header"></div>
 
     <section class="ofertas-halloween">
-      <h1>EVENTO ESPECIAL HALLOWEEN</h1>
-      <p>¡Descubre nuestras ofertas más espeluznantes y adorables del mes!</p>
+      <h1 id="titulo">EVENTOS ESPECIALES</h1>
+      <p>"Lo mejor de cada temporada, ¡solo para ti!"</p>
 
       <div class="ofertas-grid">
         <div class="tarjeta">
-          <img src="img/booo.webp" alt="Oferta 1" />
-          <h3>Decoración Fantasma</h3>
-          <p class="antes">Antes: $20</p>
+          <img src="img/Jack Skellington.jpg" alt="Oferta 1" />
+          <h3>Figura Jack Skellington</h3>
+          <p class="antes">Antes: $35</p>
+          <p class="precio">Ahora: $28</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="img/Anya Forger.jpg" alt="Oferta 2" />
+          <h3>Figura Anya Forger</h3>
+          <p class="antes">Antes: $25</p>
+          <p class="precio">Ahora: $18</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="tarjeta">
+          <img src="img/venadito-navideño.jpg" alt="Oferta 3" />
+          <h3>Venadito Navideño</h3>
+          <p class="antes">Antes: $22</p>
+          <p class="precio">Ahora: $15</p>
+          <button>Comprar</button>
+        </div>
+        <div class="tarjeta">
+          <img src="img/muñeco-de-nieve.jpg" alt="Oferta 4" />
+          <h3>Muñeco de Nieve</h3>
+          <p class="antes">Antes: $18</p>
           <p class="precio">Ahora: $12</p>
           <button>Comprar</button>
         </div>
-
         <div class="tarjeta">
-          <img src="img/Jack Skellington.jpg" alt="Oferta 2" />
-          <h3>Figura Jack Skellington</h3>
-          <p class="antes">Antes: $35</p>
-          <p class="precio">Ahora: $25</p>
-          <button>Comprar</button>
-        </div>
-
-        <div class="tarjeta">
-          <img src="img/Mask Orange Mummy.webp" alt="Oferta 3" />
-          <h3>Máscara Momia Naranja</h3>
-          <p class="antes">Antes: $15</p>
-          <p class="precio">Ahora: $9</p>
-          <button>Comprar</button>
-        </div>
-
-        <div class="tarjeta">
-          <img src="img/la bubu Ha.webp" alt="Oferta 4" />
-          <h3>Peluches Bubu Ha!</h3>
-          <p class="antes">Antes: $28</p>
+          <img src="img/papa-noel.jpg" alt="Oferta 5" />
+          <h3>Papá Noel Peluche</h3>
+          <p class="antes">Antes: $30</p>
           <p class="precio">Ahora: $20</p>
           <button>Comprar</button>
         </div>
-
         <div class="tarjeta">
-          <img src="img/kuromi flower.jpg" alt="Oferta 5" />
-          <h3>kuromi Halloween</h3>
-          <p class="antes">Antes: $45</p>
-          <p class="precio">Ahora: $30</p>
-          <button>Comprar</button>
-        </div>
-
-        <div class="tarjeta">
-          <img src="img/Anya Forger.jpg" alt="Oferta 6" />
-          <h3>Figura Anya Forger</h3>
-          <p class="antes">Antes: $25</p>
+          <img src="img/grinch-navideño.jpg" alt="Oferta 6" />
+          <h3>Grinch Navideño</h3>
+          <p class="antes">Antes: $28</p>
           <p class="precio">Ahora: $18</p>
           <button>Comprar</button>
         </div>
@@ -79,10 +76,18 @@
 
     <!--footer-->
     <div id="footer"></div>
+    <!--notificacion de carrito -->
+    <div id="cart-notification" class="cart-notification">
+      <div class="notification-content">
+        <i class="fa-solid fa-check-circle"></i>
+        <span class="notification-text">¡Producto añadido al carrito!</span>
+      </div>
+    </div>
 
     <!-- SCRIPTS -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/notificacion.js"></script>
 
     <script>
       cargaComponentes("header", "componentes/header.html");
