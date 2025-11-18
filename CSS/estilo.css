@@ -42,18 +42,18 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  padding: 3rem 0;
-}
+  padding: 3rem 0;}
 
 .card-feature {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-
   background-color: #fff;
   border-radius: 1rem;
   padding: 1.5rem 0;
+  margin-top: 2rem;
 }
 
 .card-feature i {
@@ -65,6 +65,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .feature-content span {
@@ -88,6 +91,7 @@ main h2 {
     text-align: center;
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .top-products {
     display: flex;
@@ -124,10 +128,14 @@ main h2 {
 }
 
 /* Products */
+
+/* "auto-fit" hace que si sobra espacio, las tarjetas se estiren.
+       "minmax(20rem, 1fr)" dice: La tarjeta mide mínimo 20rem, 
+       pero si hay espacio, ocupa 1 fracción (1fr) completa. */
 .container-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
 }
 
 .card-product {
@@ -282,8 +290,6 @@ main h2 {
     color: #777;
     margin-left: 0.5rem;
 }
-
-
 /* Navegación responsive */
 /*temporal hamburguesa*/
 /*no recuerdo qué era de acá para abajo*/
@@ -334,6 +340,8 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
+
+  
 }
 
 .toast {
@@ -355,4 +363,9 @@ main h2 {
 .toast.show {
   opacity: 1;
   transform: translateY(0);
+}
+/* Esto obliga al encabezado a estar  encima de los productos */
+#header {
+    position: relative;
+    z-index: 9999;
 }

@@ -8,79 +8,153 @@
       crossorigin="anonymous"
     ></script>
     <title>TIENDA</title>
-    <link rel="stylesheet" href="CSS/eventos.css" />
+    <link rel="stylesheet" href="CSS/estilo.css" />
     <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
   </head>
 
   <body>
-    <!--header-->
     <div id="header"></div>
 
     <section class="ofertas-halloween">
-      <h1>EVENTO ESPECIAL HALLOWEEN</h1>
-      <p>¡Descubre nuestras ofertas más espeluznantes y adorables del mes!</p>
+      <div class="container"> 
+        <h1>EVENTO ESPECIAL HALLOWEEN</h1>
+        <p>¡Descubre nuestras ofertas más espeluznantes y adorables del mes!</p>
 
-      <div class="ofertas-grid">
-        <div class="tarjeta">
-          <img src="img/booo.webp" alt="Oferta 1" />
-          <h3>Decoración Fantasma</h3>
-          <p class="antes">Antes: $20</p>
-          <p class="precio">Ahora: $12</p>
-          <button>Comprar</button>
-        </div>
+        <div class="container-products">
 
-        <div class="tarjeta">
-          <img src="img/Jack Skellington.jpg" alt="Oferta 2" />
-          <h3>Figura Jack Skellington</h3>
-          <p class="antes">Antes: $35</p>
-          <p class="precio">Ahora: $25</p>
-          <button>Comprar</button>
-        </div>
+          <div class="card-product">
+            <div class="container-img">
+              <img src="img/booo.webp" alt="Boo" />
+              <span class="discount">-40%</span>
+              <div class="button-group">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-solid fa-code-compare"></i></span>
+              </div>
+            </div>
 
-        <div class="tarjeta">
-          <img src="img/Mask Orange Mummy.webp" alt="Oferta 3" />
-          <h3>Máscara Momia Naranja</h3>
-          <p class="antes">Antes: $15</p>
-          <p class="precio">Ahora: $9</p>
-          <button>Comprar</button>
-        </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Decoración Fantasma</h3>
+              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <p class="price">S/12.00 <span>S/20.00</span></p>
+            </div> 
+          </div> <div class="card-product">
+            <div class="container-img">
+              <img src="img/Jack%20Skellington.jpg" alt="Jack Skellington" />
+              <span class="discount">-28%</span>
+              <div class="button-group">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-solid fa-code-compare"></i></span>
+              </div>
+            </div>
 
-        <div class="tarjeta">
-          <img src="img/la bubu Ha.webp" alt="Oferta 4" />
-          <h3>Peluches Bubu Ha!</h3>
-          <p class="antes">Antes: $28</p>
-          <p class="precio">Ahora: $20</p>
-          <button>Comprar</button>
-        </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Jack Skellington</h3>
+              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <p class="price">S/25.00 <span>S/35.00</span></p>
+            </div>
+          </div>
 
-        <div class="tarjeta">
-          <img src="img/kuromi flower.jpg" alt="Oferta 5" />
-          <h3>kuromi Halloween</h3>
-          <p class="antes">Antes: $45</p>
-          <p class="precio">Ahora: $30</p>
-          <button>Comprar</button>
-        </div>
+          <div class="card-product">
+            <div class="container-img">
+              <img src="img/Mask%20Orange%20Mummy.webp" alt="Momia" />
+              <span class="discount">-40%</span>
+              <div class="button-group">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-solid fa-code-compare"></i></span>
+              </div>
+            </div>
 
-        <div class="tarjeta">
-          <img src="img/Anya Forger.jpg" alt="Oferta 6" />
-          <h3>Figura Anya Forger</h3>
-          <p class="antes">Antes: $25</p>
-          <p class="precio">Ahora: $18</p>
-          <button>Comprar</button>
-        </div>
-      </div>
-    </section>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Máscara Momia</h3>
+              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <p class="price">S/9.00 <span>S/15.00</span></p>
+            </div>
+          </div>
 
-    <div class="p">
+          <div class="card-product">
+            <div class="container-img">
+              <img src="img/la%20bubu%20Ha.webp" alt="Labubu" />
+              <span class="discount">-28%</span>
+              <div class="button-group">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-solid fa-code-compare"></i></span>
+              </div>
+            </div>
+
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Labubu</h3>
+              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <p class="price">S/20.00 <span>S/28.00</span></p>
+            </div>
+          </div>
+
+          <div class="card-product">
+            <div class="container-img">
+              <img src="img/Anya%20Forger.jpg" alt="Anya" />
+              <span class="discount">-28%</span>
+              <div class="button-group">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-solid fa-code-compare"></i></span>
+              </div>
+            </div>
+
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Figura Anya Forger</h3>
+              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <p class="price">S/18.00 <span>S/25.00</span></p>
+            </div>
+          </div>
+
+        </div> </div> </section>
+
+    <div class="p" style="text-align: center; margin-bottom: 2rem;">
       <p>Ofertas válidas hasta fin de mes. ¡No te las pierdas!</p>
     </div>
 
-    <!--footer-->
     <div id="footer"></div>
 
-    <!-- SCRIPTS -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
 

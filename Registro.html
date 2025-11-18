@@ -8,33 +8,46 @@
 </head>
 
 <body>
-    <form class="formulario" action="index.html" method="get">
-        <section class="">
+    <form id="form" class="formulario" action="index.html" method="get">
+        <section>
             <h2>REGISTRO</h2>
+
             <div class="grupos">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="usuario" required/>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required/>
             </div>
+
             <div class="grupos">
-                <label for="nombre">Usuario</label>
-                <input type="text" id="nombre" required/>
+                <label for="name">Usuario</label>
+                <input type="text" id="name" required/>
             </div>
+
             <div class="grupos">
                 <label for="telefono">Número de contacto</label>
                 <input type="tel" id="telefono" required/>
             </div>
+
             <div class="grupos">
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" required/>
             </div>
+
             <div class="grupos">
                 <label for="confirm-password">Confirmar Contraseña</label>
                 <input type="password" id="confirm-password" required/>
             </div>
+
+            <!-- Aquí aparecerán los mensajes de validación -->
+            <p id="warnings" style="color: red; font-size: 14px; margin-top: 10px;"></p>
+
             <button class="btn">Registrarse</button>
-            <p class="link"><a href="login.html">¿Ya tienes cuenta?</a></p>
+
+            <p class="link">
+                <a href="login.html">¿Ya tienes cuenta?</a>
+            </p>
         </section>
     </form>
-</body>
 
+    <script src="js/registro.js"></script>
+</body>
 </html>
