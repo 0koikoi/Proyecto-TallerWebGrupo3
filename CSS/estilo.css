@@ -128,10 +128,14 @@ main h2 {
 }
 
 /* Products */
+
+/* "auto-fit" hace que si sobra espacio, las tarjetas se estiren.
+       "minmax(20rem, 1fr)" dice: La tarjeta mide mínimo 20rem, 
+       pero si hay espacio, ocupa 1 fracción (1fr) completa. */
 .container-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
 }
 
 .card-product {
@@ -286,8 +290,6 @@ main h2 {
     color: #777;
     margin-left: 0.5rem;
 }
-
-
 /* Navegación responsive */
 /*temporal hamburguesa*/
 /*no recuerdo qué era de acá para abajo*/
@@ -338,4 +340,73 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
+
+/*provisional*/
+/* NOTIFICACIÓN FLOTANTE DEL CARRITO */
+.cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #59f05e;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /*para el movimiento*/
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 320px;
+    border-left: 4px solid rgb(23, 59, 25);
 }
+
+.cart-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-content i {
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.notification-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Efecto de sacudida al aparecer */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.cart-notification.show {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .cart-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        transform: translateY(-100px);
+    }
+    
+    .cart-notification.show {
+        transform: translateY(0);
+    }
+}}
