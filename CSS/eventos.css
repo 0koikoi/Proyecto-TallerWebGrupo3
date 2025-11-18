@@ -1,90 +1,138 @@
-/* 🎃 SECCIÓN HALLOWEEN */
+/*  SECCIÓN */
 .ofertas-halloween {
-    background-color: #f6c6c7; /* palo rosa */
-    padding: 40px 20px;
-	text-align: center;
+  background-color: #f6c6c7; /* palo rosa */
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .ofertas-halloween h1 {
-    color: #b22222;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-
+  color: #b22222;
+  font-size: 6em;
+  margin-bottom: 10px;
 }
 
 .ofertas-halloween p {
-    font-size: 1.2em;
-    color: #4b0000;
-    margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #4b0000;
+  margin-bottom: 30px;
 }
 
 /*  Cuadrícula 3x2 */
 .ofertas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /*  Tarjetas */
 .tarjeta {
-    background: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-	text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .tarjeta:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .tarjeta img {
-    width: 80%;
-    height: 250px;
-    object-fit: contain;
-    background-color: #ffffff;
+  width: 80%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #ffffff;
 }
 
 .tarjeta h3 {
-    color: #d6336c;
-    margin-top: 10px;
+  color: #d6336c;
+  margin-top: 10px;
+  font-size: 1.8em;
 }
 
 .precio {
-    font-size: 1.3em;
-    color: #b22222;
-    font-weight: bold;
+  font-size: 1.1em;
+  color: #b22222;
+  font-weight: bold;
 }
 
 .antes {
-    font-size: 0.9em;
-    color: gray;
-    text-decoration: line-through;
+  font-size: 0.9em;
+  color: gray;
+  text-decoration: line-through;
 }
 
 .tarjeta button {
-    background-color: #b22222;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 15px 0;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+  background-color: #b22222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
 }
 
 .tarjeta button:hover {
-    background-color: #ff4b4b;
+  background-color: #ff4b4b;
 }
 
-.p{
-    font-size: 2em;
-    color: #333;
-    margin: 10px 15px;
-    height: 60px; /* Altura fija para uniformidad */
-	text-align: center;
+.p {
+  font-size: 2em;
+  color: #333;
+  margin: 10px 15px;
+  height: 60px; /* Altura fija para uniformidad */
+  text-align: center;
+}
+/* Brillo del título */
+.brillo {
+  animation: glow 0.8s ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #f7e6ea, 0 0 10px #ff8fab, 0 0 20px #b22222;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 10px #ffb3c6, 0 0 20px #ff8fab, 0 0 35px #d6336c;
+    transform: scale(1.1);
+  }
+  100% {
+    text-shadow: 0 0 5px #ff8fab, 0 0 10px #ff8fab, 0 0 20px #b22222;
+    transform: scale(1);
+  }
+}
+
+/* Zoom + brillo  para tarjetas */
+.zoom-brillo {
+  transform: scale(1.06);
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #f1a5b8, 0 0 20px #ff8fab, 0 0 30px #d6336c;
+}
+/* Responsive  */
+@media (max-width: 900px) {
+  .ofertas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ofertas-grid {
+    grid-template-columns: 1fr;
+  }
+  .ofertas-halloween h1 {
+    font-size: 3em;
+  }
+  .ofertas-halloween p {
+    font-size: 1.8em;
+  }
+  .tarjeta img {
+    height: 180px;
+  }
 }

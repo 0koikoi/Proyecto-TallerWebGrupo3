@@ -340,32 +340,74 @@ main h2 {
 		color: #fff;
 		font-size: 1.6rem;
 	}
+}/*fin temporal hamburguesa que ya funciona*/
 
-  
+/*provisional*/
+/* NOTIFICACIÓN FLOTANTE DEL CARRITO */
+.cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 320px;
+    border-left: 4px solid #2E7D32;
 }
 
-.toast {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #3cb371;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 99999;
+.cart-notification.show {
+    transform: translateX(0);
+    opacity: 1;
 }
 
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
-/* Esto obliga al encabezado a estar  encima de los productos */
-#header {
-    position: relative;
-    z-index: 9999;
+
+.notification-content i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.notification-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Efecto de sacudida al aparecer */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.cart-notification.show {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .cart-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        transform: translateY(-100px);
+    }
+    
+    .cart-notification.show {
+        transform: translateY(0);
+    }
 }

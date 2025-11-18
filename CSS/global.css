@@ -34,3 +34,24 @@ html {
   margin: 0 auto;
   padding: 0 1rem;
 }
+/* RESPONSIVE  */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* RESPONSIVE PARA CELULAR  */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}

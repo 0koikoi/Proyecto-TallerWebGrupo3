@@ -8,155 +8,86 @@
       crossorigin="anonymous"
     ></script>
     <title>TIENDA</title>
-    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/eventos.css" />
     <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
   </head>
 
   <body>
+    <!--header-->
     <div id="header"></div>
 
     <section class="ofertas-halloween">
-      <div class="container"> 
-        <h1>EVENTO ESPECIAL HALLOWEEN</h1>
-        <p>¡Descubre nuestras ofertas más espeluznantes y adorables del mes!</p>
+      <h1 id="titulo">EVENTOS ESPECIALES</h1>
+      <p>"Lo mejor de cada temporada, ¡solo para ti!"</p>
 
-        <div class="container-products">
+      <div class="ofertas-grid">
+        <div class="tarjeta">
+          <img src="img/Jack Skellington.jpg" alt="Oferta 1" />
+          <h3>Figura Jack Skellington</h3>
+          <p class="antes">Antes: $35</p>
+          <p class="precio">Ahora: $28</p>
+          <button>Comprar</button>
+        </div>
 
-          <div class="card-product">
-            <div class="container-img">
-              <img src="img/booo.webp" alt="Boo" />
-              <span class="discount">-40%</span>
-              <div class="button-group">
-                <span><i class="fa-regular fa-eye"></i></span>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <span><i class="fa-solid fa-code-compare"></i></span>
-              </div>
-            </div>
+        <div class="tarjeta">
+          <img src="img/Anya Forger.jpg" alt="Oferta 2" />
+          <h3>Figura Anya Forger</h3>
+          <p class="antes">Antes: $25</p>
+          <p class="precio">Ahora: $18</p>
+          <button>Comprar</button>
+        </div>
 
-            <div class="content-card-product">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Decoración Fantasma</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-              <p class="price">S/12.00 <span>S/20.00</span></p>
-            </div> 
-          </div> <div class="card-product">
-            <div class="container-img">
-              <img src="img/Jack%20Skellington.jpg" alt="Jack Skellington" />
-              <span class="discount">-28%</span>
-              <div class="button-group">
-                <span><i class="fa-regular fa-eye"></i></span>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <span><i class="fa-solid fa-code-compare"></i></span>
-              </div>
-            </div>
+        <div class="tarjeta">
+          <img src="img/venadito-navideño.jpg" alt="Oferta 3" />
+          <h3>Venadito Navideño</h3>
+          <p class="antes">Antes: $22</p>
+          <p class="precio">Ahora: $15</p>
+          <button>Comprar</button>
+        </div>
+        <div class="tarjeta">
+          <img src="img/muñeco-de-nieve.jpg" alt="Oferta 4" />
+          <h3>Muñeco de Nieve</h3>
+          <p class="antes">Antes: $18</p>
+          <p class="precio">Ahora: $12</p>
+          <button>Comprar</button>
+        </div>
+        <div class="tarjeta">
+          <img src="img/papa-noel.jpg" alt="Oferta 5" />
+          <h3>Papá Noel Peluche</h3>
+          <p class="antes">Antes: $30</p>
+          <p class="precio">Ahora: $20</p>
+          <button>Comprar</button>
+        </div>
+        <div class="tarjeta">
+          <img src="img/grinch-navideño.jpg" alt="Oferta 6" />
+          <h3>Grinch Navideño</h3>
+          <p class="antes">Antes: $28</p>
+          <p class="precio">Ahora: $18</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
 
-            <div class="content-card-product">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Jack Skellington</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-              <p class="price">S/25.00 <span>S/35.00</span></p>
-            </div>
-          </div>
-
-          <div class="card-product">
-            <div class="container-img">
-              <img src="img/Mask%20Orange%20Mummy.webp" alt="Momia" />
-              <span class="discount">-40%</span>
-              <div class="button-group">
-                <span><i class="fa-regular fa-eye"></i></span>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <span><i class="fa-solid fa-code-compare"></i></span>
-              </div>
-            </div>
-
-            <div class="content-card-product">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Máscara Momia</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-              <p class="price">S/9.00 <span>S/15.00</span></p>
-            </div>
-          </div>
-
-          <div class="card-product">
-            <div class="container-img">
-              <img src="img/la%20bubu%20Ha.webp" alt="Labubu" />
-              <span class="discount">-28%</span>
-              <div class="button-group">
-                <span><i class="fa-regular fa-eye"></i></span>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <span><i class="fa-solid fa-code-compare"></i></span>
-              </div>
-            </div>
-
-            <div class="content-card-product">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Labubu</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-              <p class="price">S/20.00 <span>S/28.00</span></p>
-            </div>
-          </div>
-
-          <div class="card-product">
-            <div class="container-img">
-              <img src="img/Anya%20Forger.jpg" alt="Anya" />
-              <span class="discount">-28%</span>
-              <div class="button-group">
-                <span><i class="fa-regular fa-eye"></i></span>
-                <span><i class="fa-regular fa-heart"></i></span>
-                <span><i class="fa-solid fa-code-compare"></i></span>
-              </div>
-            </div>
-
-            <div class="content-card-product">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <h3>Figura Anya Forger</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-              <p class="price">S/18.00 <span>S/25.00</span></p>
-            </div>
-          </div>
-
-        </div> </div> </section>
-
-    <div class="p" style="text-align: center; margin-bottom: 2rem;">
+    <div class="p">
       <p>Ofertas válidas hasta fin de mes. ¡No te las pierdas!</p>
     </div>
 
+    <!--footer-->
     <div id="footer"></div>
+    <!--notificacion de carrito -->
+    <div id="cart-notification" class="cart-notification">
+      <div class="notification-content">
+        <i class="fa-solid fa-check-circle"></i>
+        <span class="notification-text">¡Producto añadido al carrito!</span>
+      </div>
+    </div>
 
+    <!-- SCRIPTS -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/notificacion.js"></script>
 
     <script>
       cargaComponentes("header", "componentes/header.html");

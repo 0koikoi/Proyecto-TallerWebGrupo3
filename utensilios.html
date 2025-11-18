@@ -20,9 +20,8 @@
     <main class="main-content">
       <div class="container">
         <h1 class="heading-1">Nuestros utensilios</h1>
-        
-        <div class="container-products">
 
+        <div class="container-products">
           <div class="card-product">
             <div class="container-img">
               <img src="img/Sans%20y%20Papyrus%20saleros.jpg" alt="Saleros" />
@@ -42,14 +41,19 @@
                 <i class="fa-regular fa-star"></i>
               </div>
               <h3>Salero Sans y Papyrus</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <span class="add-cart"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></span>
               <p class="price">S/5.00</p>
             </div>
           </div>
 
           <div class="card-product">
             <div class="container-img">
-              <img src="img/Taza%20gorro%20de%20Lufy.jpg" alt="Taza one piece" />
+              <img
+                src="img/Taza%20gorro%20de%20Lufy.jpg"
+                alt="Taza one piece"
+              />
               <div class="button-group">
                 <span><i class="fa-regular fa-eye"></i></span>
                 <span><i class="fa-regular fa-heart"></i></span>
@@ -66,7 +70,9 @@
                 <i class="fa-regular fa-star"></i>
               </div>
               <h3>Tazas One piece</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <span class="add-cart"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></span>
               <p class="price">S/8.00</p>
             </div>
           </div>
@@ -90,17 +96,30 @@
                 <i class="fa-regular fa-star"></i>
               </div>
               <h3>Antorcha Minecraft</h3>
-              <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+              <span class="add-cart"
+                ><i class="fa-solid fa-basket-shopping"></i
+              ></span>
               <p class="price">S/10.00</p>
             </div>
           </div>
-
-        </div> </div> </main>
+        </div>
+      </div>
+    </main>
 
     <div id="footer"></div>
 
+    <!--notificacion de carrito -->
+    <div id="cart-notification" class="cart-notification">
+      <div class="notification-content">
+        <i class="fa-solid fa-check-circle"></i>
+        <span class="notification-text">¡Producto añadido al carrito!</span>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
     <script src="js/cargaComponentes.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/notificacion.js"></script>
 
     <script>
       cargaComponentes("header", "componentes/header.html");

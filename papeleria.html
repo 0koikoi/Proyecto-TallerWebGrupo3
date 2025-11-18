@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/08e9618c09.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Papelería - TIENDA</title>
-    <link rel="stylesheet" href="CSS/estilo.css" />
-    <link rel="stylesheet" href="CSS/global.css" />
-    <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/footer.css" />
-  </head>
 
-  <body>
-    <!--header-->
-    <div id="header"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/08e9618c09.js" crossorigin="anonymous"></script>
+  <title>Papelería - TIENDA</title>
+  <link rel="stylesheet" href="CSS/estilo.css" />
+  <link rel="stylesheet" href="CSS/global.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+</head>
 
-    <main class="main-content">
-      <div class="container">
-        <h1 class="heading-1">Nuestra Papelería</h1>
+<body>
+  <!--header-->
+  <div id="header"></div>
 
-     <div class="container-products">
-   <!-- cinamoroll  -->
-           
-          <div class="card-product">
+  <main class="main-content">
+    <div class="container">
+      <h1 class="heading-1">Nuestra Papelería</h1>
+
+      <div class="container-products">
+        <!-- cinamoroll  -->
+
+        <div class="card-product">
           <div class="container-img">
             <img src="img/cinamoroll.jpg" alt="cinamoroll" />
             <div class="button-group">
@@ -45,12 +43,12 @@
             </div>
             <h3>cinamoroll</h3>
             <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-          <p class="price">S/7.00</p>
+            <p class="price">S/7.00</p>
           </div>
         </div>
 
-   <!-- Cartuchera Pompompurin-->
-            <div class="card-product">
+        <!-- Cartuchera Pompompurin-->
+        <div class="card-product">
           <div class="container-img">
             <img src="img/cartuchera pompompurin.jpg" alt="Pompompurin" />
             <div class="button-group">
@@ -74,10 +72,10 @@
           </div>
         </div>
 
-        
-  <!-- Lapiceros Sanrio-->      
 
-               <div class="card-product">
+        <!-- Lapiceros Sanrio-->
+
+        <div class="card-product">
           <div class="container-img">
             <img src="img/Pompompurin pencil.jpg" alt="Lapiceros" />
             <div class="button-group">
@@ -86,7 +84,7 @@
               <span><i class="fa-solid fa-code-compare"></i></span>
             </div>
           </div>
-  
+
           <div class="content-card-product">
             <div class="stars">
               <i class="fa-solid fa-star"></i>
@@ -100,22 +98,32 @@
             <p class="price">S/5.00</p>
           </div>
         </div>
-     </div>
-     
-      </main>
+      </div>
+
+  </main>
 
 
 
-    <!--footer-->
-    <div id="footer"></div>
-    
-    <!-- SCRIPTS -->
-    <script src="js/cargaComponentes.js"></script>
-    <script src="js/menu.js"></script>
+  <!--footer-->
+  <div id="footer"></div>
 
-    <script>
-      cargaComponentes("header", "componentes/header.html");
-      cargaComponentes("footer", "componentes/footer.html");
-    </script>
-  </body>
+  <!--notificacion de carrito -->
+  <div id="cart-notification" class="cart-notification">
+    <div class="notification-content">
+      <i class="fa-solid fa-check-circle"></i>
+      <span class="notification-text">¡Producto añadido al carrito!</span>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/cargaComponentes.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/notificacion.js"></script>
+
+  <script>
+    cargaComponentes("header", "componentes/header.html");
+    cargaComponentes("footer", "componentes/footer.html");
+  </script>
+</body>
+
 </html>
