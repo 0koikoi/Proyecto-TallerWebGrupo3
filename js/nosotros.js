@@ -11,6 +11,7 @@ img.addEventListener("mouseleave", () => {
 });
 
 
+
 /*Cambio de color gradual con animación*/ 
 document.addEventListener("DOMContentLoaded", function () {
     const titulo = document.querySelector(".titulo-nosotros");

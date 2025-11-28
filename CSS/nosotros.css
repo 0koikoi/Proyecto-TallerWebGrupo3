@@ -19,7 +19,7 @@ h2 {
 
 .titulo-nosotros {
   text-align: center;
-  font-size: 48px;
+  font-size: 55px;
   color: #272626;
   margin-bottom: 40px;
   font-weight: 700;
@@ -55,19 +55,75 @@ img.nosotros {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
 }
 
-.texto-nosotros {
-  max-width: 900px;
-  text-align: justify;
+.section-geek {
+  background-color: #e786af;
+  padding: 60px 40px;
+  margin-top: 60px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards-geek {
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card-geek {
+  background: oklch(84.57% 0.09136 352.461);
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-geek:hover {
+  transform: translateY(-8px);
+}
+
+.card-geek h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-geek p {
   font-size: 20px;
-  color: #636060;
+  line-height: 1.5;
 }
 
-.texto-nosotros h3 {
-  margin-top: 25px;
+.historia-geek {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background: oklch(84.57% 0.09136 352.461);
+  padding: 30px;
+  border-radius: 25px;
   font-size: 25px;
-  color: #111;
 }
 
-.texto-nosotros p {
-  margin-bottom: 20px; 
+.firma {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
 }
+
+.card-geek {
+  animation: brilloGeek 2s infinite alternate;
+}
+
+@keyframes brilloGeek {
+  0% {
+    box-shadow: 0 0 5px #e65fa5, 0 0 15px #f83285;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 30px #f7227e;
+  }
+}
+
+
