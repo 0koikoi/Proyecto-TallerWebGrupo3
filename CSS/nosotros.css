@@ -73,7 +73,7 @@ img.nosotros {
 }
 
 .card-geek {
-  background: oklch(65.946% 0.1404 355.172);
+  background: #ffe4e4;
   padding: 25px 20px;
   border-radius: 20px;
   width: 300px;
@@ -101,7 +101,7 @@ img.nosotros {
   max-width: 900px;
   margin: auto;
   text-align: center;
-  background: oklch(84.57% 0.09136 352.461);
+  background: oklch(94.794% 0.03019 351.302);
   padding: 30px;
   border-radius: 25px;
   font-size: 25px;
