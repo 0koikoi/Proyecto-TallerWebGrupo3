@@ -107,6 +107,7 @@ img.nosotros {
   font-size: 25px;
 }
 
+
 .firma {
   margin-top: 15px;
   font-weight: bold;
@@ -126,4 +127,55 @@ img.nosotros {
   }
 }
 
+.texto-nosotros p {
+  margin-bottom: 20px; 
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-nosotros {
+    padding: 30px 20px;
+  }
 
+  .titulo-nosotros {
+    font-size: 32px;
+  }
+
+  img.nosotros {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto-imagen {
+    font-size: 24px;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .texto-nosotros {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .texto-nosotros h3 {
+    font-size: 20px;
+  }
+}
+
+/* RESPONSIVE PARA CELULAR */
+@media (max-width: 480px) {
+  .titulo-nosotros {
+    font-size: 26px;
+  }
+
+  .texto-imagen {
+    font-size: 20px;
+  }
+
+  .texto-nosotros {
+    font-size: 14px;
+  }
+
+  .texto-nosotros h3 {
+    font-size: 18px;
+  }
+}

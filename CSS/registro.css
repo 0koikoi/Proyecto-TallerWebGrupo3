@@ -105,3 +105,52 @@ input:focus {
 .link a:hover {
   text-decoration: underline;
 }
+
+/*responsive*/ 
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 330px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+/* responsive laptp */
+
+@media (min-width: 1024px) {
+  form {
+    width: 420px;
+    padding: 40px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    max-width: 250px;
+  }
+}
