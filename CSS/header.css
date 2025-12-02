@@ -197,6 +197,7 @@
   display: none;
   width: 240px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  z-index: 1000; /*para que la wea no se tape*/
 }
 
 @media (min-width: 781px) {
@@ -231,7 +232,7 @@
     align-items: flex-start;
     padding: 2rem 1.5rem;
     border-top: 1px solid #ddd;
-    z-index: 99;
+    z-index: 900;
     display: none;
   }
 
@@ -241,7 +242,7 @@
 
   .nav-toggle {
     display: block;
-    z-index: 100;
+    z-index: 901;
   }
 
   .dropdown:hover .mega-menu {
