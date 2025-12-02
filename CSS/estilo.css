@@ -561,3 +561,63 @@ main h2 {
   margin-top: 2rem;
 }
 
+/* --- ESTILOS PARA EL MENSAJE DE CONFIRMACIÓN DE COMPRA (FINAL) --- */
+
+.mensaje-compra-finalizada {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/*  Estilo del Círculo Sólido de Verificación */
+.mensaje-compra-finalizada .icono-confirmacion-circulo {
+    background-color: #ff94ac; 
+    
+    /* Forma y tamaño */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    
+    /* Centrado del Ícono dentro del círculo */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+/* Estilo del Ícono de Check dentro del círculo */
+.mensaje-compra-finalizada .icono-confirmacion-circulo i {
+    font-size: 3.5rem; 
+    color: #fff; /* Ícono blanco */
+}
+
+/* Estilos de Texto */
+.mensaje-compra-finalizada h4 {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+/* Estilo del Total */
+.mensaje-compra-finalizada .total-pagado {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* --- ADAPTACIÓN RESPONSIVE ESPECÍFICA PARA MÓVILES --- */
+
+@media (max-width: 600px) {
+    /* 1. Panel Lateral del Carrito (Ocupa todo el ancho) */
+    .carrito-panel-lateral {
+        width: 100%; /* El sidebar ocupa el 100% del ancho de la pantalla */
+        /* Asegura que no se desborde */
+        max-width: 100%; 
+    }
+
+    /* Opcional: Si el header se desborda, puedes ajustar el padding general */
+    .topbar, .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
