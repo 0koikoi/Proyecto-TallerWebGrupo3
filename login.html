@@ -8,21 +8,21 @@
 </head>
 
 <body>
-    <form class="formulario" action="index.html" method="get">
+    <form class="formulario" action="php/login.php" method="POST">
         <section class="sec-informacion">
-            <h2>INICIAR SESIÓN</h2>
-            <div class="grupos">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" required />
-            </div>
-            <div class="grupos">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" required />
-            </div>
-            <button class="btn">Entrar</button>
-            <p class="link"><a href="Registro.html">¿No tienes cuenta?</a></p>
-        </section>
-    </form>
+        <h2>INICIAR SESIÓN</h2>
+        <div class="grupos">
+            <label for="usuario">Usuario (Nombre)</label>
+            <input type="text" id="usuario" name="usuario" required />
+        </div>
+        <div class="grupos">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <button class="btn">Entrar</button>
+        <p class="link"><a href="Registro.html">¿No tienes cuenta?</a></p>
+    </section>
+</form>
 </body>
 
 </html>

@@ -5,14 +5,14 @@ const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
 form.addEventListener("submit", e => {
-    e.preventDefault()
+    e.preventDefault() // Detenemos el envío automático para validar primero
     let warnings = ""
     let entrar = false
-    let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
 
-    if (nombre.value.length < 6) {
-        warnings += "El nombre no es válido <br>"
+    if (nombre.value.length < 4) {
+        warnings += "El nombre es muy corto <br>"
         entrar = true
     }
 
@@ -21,14 +21,17 @@ form.addEventListener("submit", e => {
         entrar = true
     }
 
-    if (pass.value.length < 8) {
-        warnings += "La contraseña no es válida <br>"
+    if (pass.value.length < 6) {
+        warnings += "La contraseña es muy corta <br>"
         entrar = true
     }
 
     if (entrar) {
         parrafo.innerHTML = warnings
     } else {
-        parrafo.innerHTML = "Enviado"
+        parrafo.style.color = "green";
+        parrafo.innerHTML = "Enviando datos...";
+        // AQUÍ ESTÁ LA MAGIA: Si no hay errores, enviamos el formulario
+        e.currentTarget.submit(); 
     }
 })
