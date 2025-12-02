@@ -71,7 +71,8 @@ function finalizarCompra() {
     guardarCarrito(); // Guarda el carrito vacío
 }
 
-// ---- Función para mostrar el Mensaje de Éxito (Usa clases CSS) ----
+// /js/menu.js - Función mostrarMensajeExito 
+
 function mostrarMensajeExito(total) {
     if (!contenedorElementosCarrito) return; 
 
@@ -80,10 +81,12 @@ function mostrarMensajeExito(total) {
         carritoPanelLateral.classList.add("abierto");
     }
 
-    // Usa las CLASES CSS para el diseño (mensaje-compra-finalizada, icono-confirmacion, etc.)
+    // CORRECCIÓN CLAVE: Usamos la estructura DIV > I para el diseño del círculo verde sólido.
     contenedorElementosCarrito.innerHTML = `
         <div class="mensaje-compra-finalizada">
-            <i class="fa-solid fa-check-circle icono-confirmacion"></i> 
+            <div class="icono-confirmacion-circulo"> 
+                <i class="fa-solid fa-check"></i> 
+            </div>
             
             <h4>¡Pedido Procesado!</h4>
             <p>Gracias por tu compra.</p>
@@ -91,18 +94,18 @@ function mostrarMensajeExito(total) {
         </div>
     `;
 
-    // Ocultar el pie de página del carrito (Total y Botón de Compra)
+    // Ocultar el pie de página del carrito
     const carritoPie = document.querySelector(".carrito-pie");
     if (carritoPie) {
         carritoPie.style.display = 'none';
     }
 
-    // Temporizador para restablecer la vista después de 5 segundos
+    // Temporizador para restablecer la vista
     setTimeout(() => {
         if (carritoPie) {
-            carritoPie.style.display = 'flex'; // Vuelve a mostrar el pie
+            carritoPie.style.display = 'flex';
         }
-        renderizarCarrito(); // Renderiza el carrito vacío
+        renderizarCarrito();
     }, 5000); 
 }
 
@@ -264,7 +267,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const name = cardProduct.querySelector("h3").textContent.trim();
             const priceElement = cardProduct.querySelector(".price");
             const priceText = priceElement.childNodes[0].textContent.trim();
-            const image = cardProduct.querySelector(".container-img img").src;
+            // Usa getAttribute('src') para asegurar que se guarde la ruta relativa 
+            const image = cardProduct.querySelector(".container-img img").getAttribute('src');   
 
             const datosProducto = { name, price: priceText, image };
             agregarAlCarrito(datosProducto); 
